@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.wrapper{
+    background: #0D0D0D;
+    min-width: 100%;
+    min-height: 100vh;
+}
+nav{
+    width: 100%;
+    min-height: 10vh;
+    padding: 2rem 0rem;   
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+}
+.services{
+    position: relative;
+    top: 10px;
+    left: 1000px;
+    color: white;
+}
+.services:hover{
+    color: black;
+    background: white;
+    padding: 0.2rem 0.3rem;
+    transition: .15s ;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+.about{
+    position: relative;
+    top: 10px;
+    right: 200px;
+    background: white; /*rgb(255, 255, 255 , 0.1);*/
+    color: #0D0D0D;
+    padding: 0.2rem 0.4rem;
+    border-radius: 2rem;
+    animation: pageload 7.4s ease-out;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+.about:hover {
+    color: white;
+    background: none;
+    transition: .25s ease-in-out;
+}
+.brand{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    position: absolute;
+    top: 18px;
+    left: 60px;
+    letter-spacing: 1.1cm;
+    cursor: pointer;
+    text-shadow: 3.5px 3.5px 3.5px rgba(255, 255, 255, 0.25);
+}
+.design{
+    font-size: 130px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255 , 0.040);
+    position: absolute;
+    left: 30%;
+    z-index: 100;   
+}
+.thoughts{
+    font-size: 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255 , 0.040);
+    position: absolute;
+    top: 64%;
+    left: 63%;
+    z-index: 100;   
+}
+.page2{
+    min-width: 100%;
+    min-height: 100vh;
+    background: white;
+    /*background: linear-gradient(whitesmoke, white);*/
+}
+.typing1{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px;
+}
+.typing2{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px ;
+
+}
+.typing1::after,.typing2::after {
+    content: "|";
+    font-size: smaller;
+}
+@keyframes type2 {
+    0%,50%,100% {
+      width: 0;
+    }
+    60%, 90% {
+      width: 23.5em;
+    }
+}
+@keyframes type1 {
+    0%,50%,100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 12.75em;
+    }
+}
+@keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+.typing1 {
+    animation: type1;
+}
+.typing2 {
+    animation: type2;
+}
+.typing1,.typing2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 15s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+    animation-delay: 4.15s;
+    
+}
+.typing1::after,.typing2::after {
+    content: "|";
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(15, end);
+}
+.type{
+    position: absolute;
+    left: 34%;
+    top: 130%;
+}
+.type2{
+    position: absolute;
+    left: 19%;
+    top: 130%;
+}
+.page3 {
+    min-width: 100%;
+    min-height: 100vh;
+    background: white;
+    overflow-x: hidden;
+}
+.product {
+    border: 2px solid rgb(189, 125, 189);
+    position: absolute;
+    top: 220%;
+    left: 3%;
+    transform: rotate(-3deg);
+    border-radius: 10px 10px 10px 0;
+}
+.prods{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    position: absolute;
+    left: 74.6%;
+    top: 230%;
+    color: #070B33;
+}
+.page4{
+    min-width: 100%;
+    min-height: 100vh;
+    background: white;
+}
+.bus{
+    border: 2px solid rgb(189, 125, 189);
+    position: absolute;
+    top: 320%;
+    right: 3%;
+    transform: rotate(3deg);
+    border-radius: 10px 10px 10px 0;
+}
+.business {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    position: absolute;
+    right: 77%;
+    top: 330%;
+    color: #070B33;
+}
+.page5{
+    min-width: 100%;
+    min-height: 100vh;
+    background: white;
+}
+.port{
+    border: 2px solid rgb(189, 125, 189);
+    position: absolute;
+    top: 420%;
+    left: 3%;
+    transform: rotate(-3deg);
+    border-radius: 10px 10px 10px 0;
+}
+.portfolio {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    position: absolute;
+    left: 77%;
+    top: 430%;
+    color: #070B33;
+}
+footer {
+    min-width: 100%;
+    min-height: 15vh;
+    background: #0D0D0D;
+}
+footer ul{
+    display: flex;
+    position: relative;
+    top: 45px;
+    justify-content: space-evenly;
+}
+#fb{
+    font-size: 32px;
+    color: white;
+}
+#gmail{
+    font-size: 32px;
+    color: white;
+}
+#linkedin {
+    font-size: 32px;
+}
+.backtotop {
+    position: fixed;
+    right: 50px;
+    bottom: 135px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #0D0D0D;
+    animation: pageload 8s;
+}
+.anime {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    transform-origin: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: loading 1.38s ease-in-out infinite; 
+    margin: 3.5px;
+}
+.circle1 {
+    animation-delay: 0.1s;
+}
+.circle2 { 
+    animation-delay: 0.2s;
+}
+.circle3 {
+    animation-delay: 0.3s;
+}
+.circle4 {
+    animation-delay: 0.4s;
+}
+.circle5 {
+    animation-delay: 0.5s;
+}
+@keyframes loading {
+    0% {
+        transform: translate(0px,0px);
+        background: transparent;
+    }
+    50% {
+        width: 7.5px;
+        height: 7.5px;
+        transform: translate(0px,-50px);
+        background: #0D0D0D;
+    }
+    100% {
+        transform: translate(0px,0px);
+        background: transparent;
+    }
+}
+.anime.hidden {
+    animation: animate 4s;
+    animation-fill-mode: forwards; 
+}
+@keyframes animate {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    0%,25% {
+        opacity: 100;
+        visibility: visible;       
+    }
+}
+@keyframes pageload {
+    0%,25%,50%{
+        visibility: hidden;
+    }
+    100% {   
+        visibility: visible;
+    }
+}
+.page2,.page3,.page4,.page5 {
+    animation: pageload 8s;
+}
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0, 0, 0.8);
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    background: white;
+    color:black;
+    width: 800px;
+    height: 600px;
+    z-index: 99999;
+    padding: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    top:20px;
+    right:20px;
+    background-color: #000;
+    color: white;
+    font-size: 23px;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50% , -50%) scale(1);
+}
+
+@media (max-width:900px) and (min-width:360px)
+{
+    .wrapper {
+        min-width: 700px;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .brand {
+        font-size: 30px;
+        letter-spacing: 0.75cm;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+    }
+    .design {
+        font-size: 75px;
+    }
+    .page2{
+        min-width: 700px;
+        min-height: 100vh;
+        background: white;
+        /*background: linear-gradient(whitesmoke, white);*/
+    }
+    .page3 {
+        min-width: 700px;
+        min-height: 100vh;
+        background: white;
+        overflow-x: hidden;
+    }
+    .page4{
+        min-width: 700px;
+        min-height: 100vh;
+        background: white;
+    }
+    .page5{
+        min-width: 700px;
+        min-height: 100vh;
+        background: white;
+    }
+}
