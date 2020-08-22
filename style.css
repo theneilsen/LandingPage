@@ -404,68 +404,94 @@ footer ul{
 @media (max-width:900px) and (min-width:360px)
 {
     .wrapper {
-        min-width: 1257px;
-        min-height: 300vh;
+        max-width: 800px;
+        min-height: 100vh;
         overflow-x: hidden;
     }
     .brand {
-        font-size: 120px;
-        letter-spacing: 3cm;
+        font-size: 30px;
+        letter-spacing: 0.9cm;
         position: absolute;
-        top: 50px;
-        left: 40px;
+        top: 40px;
+        left: 30px;
     }
     .design {
-        font-size: 160px;
+        font-size: 60px;
         position: absolute;
-        top: 60%;
-        left: 15%;
+        top: 30%;
+        left: 10%;
         z-index: 100;
     }
+    .thoughts{
+        font-size: 20px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255 , 0.040);
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        z-index: 100;   
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px; 
+    }
+    .about{
+        position: relative;
+        top: 10px;
+        right: 100px;
+        background: white; /*rgb(255, 255, 255 , 0.1);*/
+        color: #0D0D0D;
+        padding: 0.2rem 0.4rem;
+        border-radius: 2rem;
+        animation: pageload 7.4s ease-out;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
     .page2{
-        min-width: 1257px;
-        min-height: 300vh;
+        max-width: 800px;
+        min-height: 100vh;
         background: gray;
         /*background: linear-gradient(whitesmoke, white);*/
     }
     .page3 {
-        min-width: 1257px;
-        min-height: 300vh;
+        max-width: 800px;
+        min-height: 100vh;
         background: yellow;
         overflow-x: hidden;
     }
     .page4{
-        min-width: 1257px;
-        min-height: 300vh;
+        max-width: 800px;
+        min-height: 100vh;
         background: red;
     }
     .page5{
-        min-width: 1257px;
-        min-height: 300vh;
+        max-width: 800px;
+        min-height: 100vh;
         background: blue;
     }
     footer {
-        min-width: 1257px;
-        min-height: 40vh;
+        max-width: 800px;
+        min-height: 15vh;
     }
     footer ul {
         position: relative;
-        top: 80px;
+        top: 30px;
     }
     #insta {
-        width: 80px;
-        height:80px;
+        width: 30px;
+        height:30px;
     }
     #fb{
-        font-size: 80px;
+        font-size: 30px;
         color: white;
     }
     #gmail{
-        font-size: 80px;
+        font-size: 30px;
         color: white;
     }
     #linkedin {
-        font-size: 80px;
+        font-size: 30px;
     }
     .typing1{
         overflow: hidden;
@@ -473,7 +499,7 @@ footer ul{
         display: inline-block;
         position: relative;
         font-family: 'Poppins',sans-serif;
-        font-size: 80px;
+        font-size: 25px;
     }
     .typing2{
         overflow: hidden;
@@ -481,42 +507,41 @@ footer ul{
         display: inline-block;
         position: relative;
         font-family: 'Poppins',sans-serif;
-        font-size: 80px ;
+        font-size: 25px ;
     
     }
     .type{
         position: absolute;
-        left: 34%;
-        top: 500%;
+        left: 20%;
+        top: 100%;
     }
     .type2{
         position: absolute;
         left: 19%;
-        top: 500%;
+        top: 100%;
     }
     .product {
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
-        top: 850%;
-        left: 3%;
+        top: 220%;
+        left: 5%;
         transform: none;
         border-radius: 10px 10px 10px 0;
     }
     .prods{
         font-family: "Montserrat", sans-serif;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: lighter;
-        position: absolute;
-        
-        left: 74.6%;
-        top: 230%;
+        position: absolute;  
+        left: 25%;
+        top: 235%;
         color: #070B33;
     }
     .bus{
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
-        top: 1100%;
-        right: 3%;
+        top: 330%;
+        left: 3%;
         transform: none;
         border-radius: 10px 10px 10px 0;
     }
@@ -525,14 +550,14 @@ footer ul{
         font-size: 30px;
         font-weight: lighter;
         position: absolute;
-        right: 77%;
-        top: 330%;
+        left: 26%;
+        top: 350%;
         color: #070B33;
     }
     .port{
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
-        top: 420%;
+        top: 440%;
         left: 3%;
         transform: none;
         border-radius: 10px 10px 10px 0;
@@ -542,8 +567,8 @@ footer ul{
         font-size: 30px;
         font-weight: lighter;
         position: absolute;
-        left: 77%;
-        top: 430%;
+        left: 25%;
+        top: 470%;
         color: #070B33;
     }
     
