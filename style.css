@@ -404,40 +404,147 @@ footer ul{
 @media (max-width:900px) and (min-width:360px)
 {
     .wrapper {
-        min-width: 700px;
-        min-height: 100vh;
+        min-width: 1257px;
+        min-height: 370vh;
         overflow-x: hidden;
     }
     .brand {
-        font-size: 30px;
-        letter-spacing: 0.75cm;
+        font-size: 120px;
+        letter-spacing: 3cm;
         position: absolute;
-        top: 18px;
-        left: 20px;
+        top: 50px;
+        left: 40px;
     }
     .design {
-        font-size: 75px;
+        font-size: 160px;
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        z-index: 100;
     }
     .page2{
-        min-width: 700px;
-        min-height: 100vh;
-        background: white;
+        min-width: 1257px;
+        min-height: 370vh;
+        background: gray;
         /*background: linear-gradient(whitesmoke, white);*/
     }
     .page3 {
-        min-width: 700px;
-        min-height: 100vh;
-        background: white;
+        min-width: 1257px;
+        min-height: 370vh;
+        background: yellow;
         overflow-x: hidden;
     }
     .page4{
-        min-width: 700px;
-        min-height: 100vh;
-        background: white;
+        min-width: 1257px;
+        min-height: 370vh;
+        background: red;
     }
     .page5{
-        min-width: 700px;
-        min-height: 100vh;
-        background: white;
+        min-width: 1257px;
+        min-height: 370vh;
+        background: blue;
     }
+    footer {
+        min-width: 1257px;
+        min-height: 40vh;
+    }
+    footer ul {
+        position: relative;
+        top: 80px;
+    }
+    #insta {
+        width: 80px;
+        height:80px;
+    }
+    #fb{
+        font-size: 80px;
+        color: white;
+    }
+    #gmail{
+        font-size: 80px;
+        color: white;
+    }
+    #linkedin {
+        font-size: 80px;
+    }
+    .typing1{
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        font-family: 'Poppins',sans-serif;
+        font-size: 80px;
+    }
+    .typing2{
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        font-family: 'Poppins',sans-serif;
+        font-size: 80px ;
+    
+    }
+    .type{
+        position: absolute;
+        left: 34%;
+        top: 500%;
+    }
+    .type2{
+        position: absolute;
+        left: 19%;
+        top: 500%;
+    }
+    .product {
+        border: 2px solid rgb(189, 125, 189);
+        position: absolute;
+        top: 850%;
+        left: 3%;
+        transform: none;
+        border-radius: 10px 10px 10px 0;
+    }
+    .prods{
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: lighter;
+        position: absolute;
+        
+        left: 74.6%;
+        top: 230%;
+        color: #070B33;
+    }
+    .bus{
+        border: 2px solid rgb(189, 125, 189);
+        position: absolute;
+        top: 1100%;
+        right: 3%;
+        transform: none;
+        border-radius: 10px 10px 10px 0;
+    }
+    .business {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: lighter;
+        position: absolute;
+        right: 77%;
+        top: 330%;
+        color: #070B33;
+    }
+    .port{
+        border: 2px solid rgb(189, 125, 189);
+        position: absolute;
+        top: 420%;
+        left: 3%;
+        transform: none;
+        border-radius: 10px 10px 10px 0;
+    }
+    .portfolio {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: lighter;
+        position: absolute;
+        left: 77%;
+        top: 430%;
+        color: #070B33;
+    }
+    
 }
