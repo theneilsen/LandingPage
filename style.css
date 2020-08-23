@@ -521,6 +521,8 @@ footer ul{
         top: 100%;
     }
     .product {
+        width:300px;
+        height: 180px;
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 220%;
@@ -538,6 +540,8 @@ footer ul{
         color: #070B33;
     }
     .bus{
+        width:300px;
+        height: 180px;
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 330%;
@@ -555,6 +559,8 @@ footer ul{
         color: #070B33;
     }
     .port{
+        width:300px;
+        height: 180px;
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 440%;
