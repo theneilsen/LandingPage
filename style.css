@@ -409,17 +409,17 @@ footer ul{
         overflow-x: hidden;
     }
     .brand {
-        font-size: 30px;
-        letter-spacing: 0.9cm;
+        font-size: 35px;
+        letter-spacing: 0.79cm;
         position: absolute;
         top: 40px;
-        left: 30px;
+        left: 20px;
     }
     .design {
-        font-size: 50px;
+        font-size: 40px;
         position: absolute;
         top: 30%;
-        left: 10%;
+        left: 7%;
         z-index: 100;
     }
     .thoughts{
@@ -429,18 +429,18 @@ footer ul{
         color: rgb(255, 255, 255 , 0.040);
         position: absolute;
         top: 55%;
-        left: 45%;
+        left: 35%;
         z-index: 100;   
     }
     a{
         text-decoration: none;
         color: white;
-        font-size: 15px; 
+        font-size: 17px; 
     }
     .services{
         position: relative;
         top: 80px;
-        left: 220px;
+        left: 190px;
         color: white;
     }
     .about{
@@ -527,8 +527,8 @@ footer ul{
         top: 120%;
     }
     .product {
-        width: 400px;
-        height: 230px; 
+        width: 340px;
+        height: 210px; 
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 238%;
@@ -546,8 +546,8 @@ footer ul{
         color: #070B33;
     }
     .bus{
-        width: 400px;
-        height: 230px;
+        width: 340px;
+        height: 210px;
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 340%;
@@ -565,8 +565,8 @@ footer ul{
         color: #070B33;
     }
     .port{
-        width: 400px;
-        height: 230px; 
+        width: 340px;
+        height: 210px; 
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 439%;
