@@ -466,20 +466,20 @@ footer ul{
         margin: 0 auto;
         min-width: 391px;
         max-height: 100vh;
-        background: yellow;
+        background: white;
         overflow-x: hidden;
     }
     .page4{
         margin: 0 auto;
         min-width: 391px;
         max-height: 100vh;
-        background: red;
+        background: white;
     }
     .page5{
         margin: 0 auto;
         min-width: 391px;
         max-height: 100vh;
-        background: blue;
+        background: white;
     }
     footer {
         min-width: 391px;
