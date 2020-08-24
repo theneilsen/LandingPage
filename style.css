@@ -401,11 +401,12 @@ footer ul{
     transform: translate(-50% , -50%) scale(1);
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) 
+@media screen and (max-width: 800px) 
 {
     .wrapper {
-        max-width: 800px;
-        min-height: 100vh;
+        margin: 0 auto;
+        min-width: 391px;
+        max-height: 100vh;
         overflow-x: hidden;
     }
     .brand {
@@ -455,29 +456,33 @@ footer ul{
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
     }
     .page2{
-        max-width: 800px;
+        margin: 0 auto;
+        min-width: 391px;
         max-height: 100vh;
         background: white;
         /*background: linear-gradient(whitesmoke, white);*/
     }
     .page3 {
-        max-width: 800px;
+        margin: 0 auto;
+        min-width: 391px;
         max-height: 100vh;
         background: yellow;
         overflow-x: hidden;
     }
     .page4{
-        max-width: 800px;
+        margin: 0 auto;
+        min-width: 391px;
         max-height: 100vh;
         background: red;
     }
     .page5{
-        max-width: 800px;
+        margin: 0 auto;
+        min-width: 391px;
         max-height: 100vh;
         background: blue;
     }
     footer {
-        max-width: 800px;
+        min-width: 391px;
         max-height: 15vh;
     }
     footer ul {
@@ -527,14 +532,17 @@ footer ul{
         top: 120%;
     }
     .product {
+        margin: 0 auto;
+        justify-content: center;
         width: 340px;
         height: 210px; 
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 238%;
-        left: 3%;
+        left: 6%;
         transform: none;
         border-radius: 10px 10px 10px 0;
+        
     }
     .prods{
         font-family: "Montserrat", sans-serif;
@@ -551,7 +559,7 @@ footer ul{
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 340%;
-        left: 3%;
+        left: 6%;
         transform: none;
         border-radius: 10px 10px 10px 0;
     }
@@ -570,9 +578,10 @@ footer ul{
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 439%;
-        left: 3%;
+        left: 6%;
         transform: none;
         border-radius: 10px 10px 10px 0;
+        margin: auto;
     }
     .portfolio {
         font-family: "Montserrat", sans-serif;
