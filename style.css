@@ -447,7 +447,7 @@ footer ul{
     .about{
         position: relative;
         top: 80px;
-        right: 30px;
+        right: 70px;
         background: white; /*rgb(255, 255, 255 , 0.1);*/
         color: #0D0D0D;
         padding: 0.2rem 0.4rem;
@@ -466,20 +466,20 @@ footer ul{
         margin: 0 auto;
         min-width: 391px;
         max-height: 100vh;
-        background: white;
+        background: yellow;
         overflow-x: hidden;
     }
     .page4{
         margin: 0 auto;
         min-width: 391px;
         max-height: 100vh;
-        background: white;
+        background: red;
     }
     .page5{
         margin: 0 auto;
         min-width: 391px;
         max-height: 100vh;
-        background: white;
+        background: blue;
     }
     footer {
         min-width: 391px;
@@ -534,12 +534,12 @@ footer ul{
     .product {
         margin: 0 auto;
         justify-content: center;
-        width: 340px;
-        height: 210px; 
+        width: 360px;
+        height: 225px; 
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 238%;
-        left: 6%;
+        left: 9%;
         transform: none;
         border-radius: 10px 10px 10px 0;
         
@@ -559,7 +559,7 @@ footer ul{
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 340%;
-        left: 6%;
+        left: 10%;
         transform: none;
         border-radius: 10px 10px 10px 0;
     }
@@ -578,7 +578,7 @@ footer ul{
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 439%;
-        left: 6%;
+        left: 10%;
         transform: none;
         border-radius: 10px 10px 10px 0;
         margin: auto;
