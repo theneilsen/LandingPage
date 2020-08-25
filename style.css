@@ -98,30 +98,70 @@ a{
 .typing1{
     overflow: hidden;
     white-space: nowrap;
-    display: inline-block;
-    position: relative;
+    display: block;
+    
     font-family: 'Poppins',sans-serif;
     font-size: 40px;
 }
 .typing2{
     overflow: hidden;
     white-space: nowrap;
-    display: inline-block;
-    position: relative;
+    display: block;
+    
     font-family: 'Poppins',sans-serif;
     font-size: 40px ;
-
+}
+.typ3{
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px ;
+}
+.typ4{
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    
+    font-family: 'Poppins',sans-serif;
+    font-size: 40px ;
 }
 .typing1::after,.typing2::after {
     content: "|";
     font-size: smaller;
 }
-@keyframes type2 {
+@keyframes type4 {
     0%,50%,100% {
       width: 0;
     }
     60%, 90% {
-      width: 23.5em;
+      width: 9.35em;
+    }
+    95%, 100% {
+        width: 0;
+    }
+}
+@keyframes type3 {
+    0%,50%,100% {
+      width: 0;
+    }
+    60%, 80% {
+      width: 8.25em;
+    }
+    90%, 100% {
+        width: 0;
+    }
+}
+@keyframes type2 {
+    0%,50%,100% {
+      width: 0;
+    }
+    60%, 70% {
+      width: 5.9em;
+    }
+    80%, 100% {
+        width: 0;
     }
 }
 @keyframes type1 {
@@ -146,18 +186,23 @@ a{
 .typing2 {
     animation: type2;
 }
-.typing1,.typing2 {
+.typ3 {
+    animation: type3;
+}
+.typ4 {
+    animation: type4;
+}
+.typing1,.typing2,.typ3,.typ4 {
     overflow: hidden;
     white-space: nowrap;
-    display: inline-block;
+    display: block;
     position: relative;
     animation-duration: 15s;
     animation-timing-function: steps(25, end);
     animation-iteration-count: infinite;
     animation-delay: 4.15s;
-    
 }
-.typing1::after,.typing2::after {
+.typing1::after,.typing2::after,.typ3::after,.typ4::after {
     content: "|";
     position: absolute;
     top: 7px;
@@ -173,8 +218,16 @@ a{
 }
 .type2{
     position: absolute;
-    left: 19%;
+    left: 40%;
     top: 130%;
+}
+.typ3{
+    position: absolute;
+    top: 130%;
+}
+.typ4{
+    position: absolute; 
+    top: 250%;
 }
 .page3 {
     min-width: 100%;
@@ -401,7 +454,12 @@ footer ul{
     transform: translate(-50% , -50%) scale(1);
 }
 
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 380px) 
+{
+
+}
+
+@media screen and (max-width: 480px) 
 {
     .wrapper {
         margin: 0 auto;
@@ -447,7 +505,7 @@ footer ul{
     .about{
         position: relative;
         top: 80px;
-        right: 50px;
+        right: 20px;
         background: white; /*rgb(255, 255, 255 , 0.1);*/
         color: #0D0D0D;
         padding: 0.2rem 0.4rem;
@@ -507,20 +565,111 @@ footer ul{
     .typing1{
         overflow: hidden;
         white-space: nowrap;
-        display: inline-block;
-        position: relative;
+        display: block;
+        
         font-family: 'Poppins',sans-serif;
-        font-size: 25px;
+        font-size: 27px;
     }
     .typing2{
         overflow: hidden;
         white-space: nowrap;
-        display: inline-block;
-        position: relative;
+        display: block;
+        
         font-family: 'Poppins',sans-serif;
-        font-size: 25px ;
-    
+        font-size: 27px;
     }
+    .typ3{
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        
+        font-family: 'Poppins',sans-serif;
+        font-size: 27px;
+    }
+    .typ4{
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        
+        font-family: 'Poppins',sans-serif;
+        font-size: 27px;
+    }
+    .typing1::after,.typing2::after {
+        content: "|";
+        font-size: smaller;
+    }
+    @keyframes type4 {
+        0%,50%,100% {
+          width: 0;
+        }
+        60%, 90% {
+          width: 9.35em;
+        }
+        95%, 100% {
+            width: 0;
+        }
+    }
+    @keyframes type3 {
+        0%,50%,100% {
+          width: 0;
+        }
+        60%, 80% {
+          width: 8.25em;
+        }
+        90%, 100% {
+            width: 0;
+        }
+    }
+    @keyframes type2 {
+        0%,50% {
+          width: 0;
+        }
+        60%, 70% {
+          width: 5.9em;
+        }
+        80%, 100% {
+          width: 0;
+        }
+    }
+    @keyframes type1 {
+        0%,50%,100% {
+          width: 0;
+        }
+        10%, 40% {
+          width: 12.75em;
+        }
+    }
+    .typing1 {
+        animation: type1;
+    }
+    .typing2 {
+        animation: type2;
+    }
+    .typ3 {
+        animation: type3;
+    }
+    .typ4 {
+        animation: type4;
+    }
+    .typing1,.typing2,.typ3,.typ4{
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        
+        animation-duration: 15s;
+        animation-timing-function: steps(25, end);
+        animation-iteration-count: infinite;
+        animation-delay: 4.15s;
+    }
+    .typing1::after,.typing2::after,.typ3::after,.typ4::after {
+        content: "|";
+        position: absolute;
+        top: 7px;
+        right: 0px;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(15, end);
+    }    
     .type{
         position: absolute;
         left: 7%;
@@ -528,21 +677,28 @@ footer ul{
     }
     .type2{
         position: absolute;
-        left: 5%;
+        left: 20%;
         top: 120%;
+    }
+    .typ3{
+        position: relative;
+        top: 130%;
+    }
+    .typ4{
+        position: relative; 
+        top: 250%;
     }
     .product {
         margin: 0 auto;
         justify-content: center;
-        width: 364px;
-        height: 226px; 
+        width: 360px;
+        height: 225px; 
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 238%;
         left: 5%;
         transform: none;
         border-radius: 10px 10px 10px 0;
-        
     }
     .prods{
         font-family: "Montserrat", sans-serif;
@@ -554,8 +710,8 @@ footer ul{
         color: #070B33;
     }
     .bus{
-        width: 364px;
-        height: 226px;
+        width: 360px;
+        height: 225px;
         border: 2px solid rgb(189, 125, 189);
         position: absolute;
         top: 340%;
@@ -573,12 +729,13 @@ footer ul{
         color: #070B33;
     }
     .port{
-        width: 364px;
-        height: 226px; 
+        width: 360px;
+        height: 225px; 
         border: 2px solid rgb(189, 125, 189);
+        
         position: absolute;
         top: 439%;
-        left: 5%;
+        left: 5% ;
         transform: none;
         border-radius: 10px 10px 10px 0;
         margin: auto;
@@ -594,7 +751,7 @@ footer ul{
     }
     .backtotop {
         position: fixed;
-        right: 150px;
+        right: 30px;
         bottom: 135px;
         font-size: 20px;
         font-weight: lighter;
