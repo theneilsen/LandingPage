@@ -672,7 +672,7 @@ footer ul{
     }    
     .type{
         position: absolute;
-        left: 7%;
+        left: 14%;
         top: 120%;
     }
     .type2{
@@ -753,7 +753,7 @@ footer ul{
         position: fixed;
         right: 30px;
         bottom: 135px;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: lighter;
         color: #0D0D0D;
         animation: pageload 8s;
