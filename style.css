@@ -568,7 +568,7 @@ footer ul{
         display: block;
         
         font-family: 'Poppins',sans-serif;
-        font-size: 27px;
+        font-size: 25px;
     }
     .typing2{
         overflow: hidden;
@@ -576,7 +576,7 @@ footer ul{
         display: block;
         
         font-family: 'Poppins',sans-serif;
-        font-size: 27px;
+        font-size: 25px;
     }
     .typ3{
         overflow: hidden;
@@ -584,7 +584,7 @@ footer ul{
         display: block;
         
         font-family: 'Poppins',sans-serif;
-        font-size: 27px;
+        font-size: 25px;
     }
     .typ4{
         overflow: hidden;
@@ -592,7 +592,7 @@ footer ul{
         display: block;
         
         font-family: 'Poppins',sans-serif;
-        font-size: 27px;
+        font-size: 25px;
     }
     .typing1::after,.typing2::after {
         content: "|";
@@ -664,7 +664,7 @@ footer ul{
     .typing1::after,.typing2::after,.typ3::after,.typ4::after {
         content: "|";
         position: absolute;
-        top: 7px;
+        top: 4px;
         right: 0px;
         animation: caret infinite;
         animation-duration: 1s;
@@ -672,7 +672,7 @@ footer ul{
     }    
     .type{
         position: absolute;
-        left: 11%;
+        left: 10%;
         top: 120%;
     }
     .type2{
@@ -753,7 +753,7 @@ footer ul{
         position: fixed;
         right: 30px;
         bottom: 135px;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: lighter;
         color: #0D0D0D;
         animation: pageload 8s;
@@ -787,5 +787,6 @@ footer ul{
         height: 20px;
         border-radius: 50px;
     }
+
     
 }
