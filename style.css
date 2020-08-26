@@ -758,6 +758,16 @@ footer ul{
         color: #0D0D0D;
         animation: pageload 8s;
     }
+    .popup .overlay{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 391px;
+        height: 100vh;
+        background-color: rgba(0,0, 0, 0.8);
+        z-index: 1;
+        display: none;
+    }
     .popup .content{
         position: absolute;
         top:50%;
