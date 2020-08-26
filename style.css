@@ -517,7 +517,7 @@ footer ul{
         margin: 0 auto;
         min-width: 391px;
         max-height: 100vh;
-        background: white;
+        background: red;
         /*background: linear-gradient(whitesmoke, white);*/
     }
     .page3 {
