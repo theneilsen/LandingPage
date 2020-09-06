@@ -910,9 +910,9 @@ footer ul{
         border-radius: 50px;
     }
     #html {
-        position: relative;
-        top: 385px;
-        right: 130px;
+        position: absolute;
+        top: 159%;
+        left: 60px;
         color: rgb(252, 105, 7);;
         margin: 0px auto;
         font-size: 45px;
@@ -929,9 +929,9 @@ footer ul{
         display: none;
     }
     #css {
-        position: relative;
-        top: 338px;
-        right: 55px;
+        position: absolute;
+        top: 160%;
+        left: 100px;
         color: rgb(56, 101, 248);
         margin: 0px auto; 
         font-size: 35px;
