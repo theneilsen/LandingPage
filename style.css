@@ -508,7 +508,7 @@ footer ul{
 }
 #and {
     position: relative;
-    top: 350px;
+    top: 280px;
     right: 400px;
     
     color: rgb(0, 255, 76);
@@ -520,13 +520,12 @@ footer ul{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    top: 350px;
+    top: 280px;
     left: 320px;
 }
 #wordpress{
     position: relative;
-    top: 270px;
-
+    top: 200px;
     color: rgb(7, 203, 252);
     margin: 0px auto;
     
@@ -537,12 +536,12 @@ footer ul{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    top: 270px;
+    top: 200px;
     left: 700px;
 }
 #flutter {
     position: relative;
-    top: 190px;
+    top: 120px;
     left: 400px;
     
     color: white;
@@ -555,12 +554,12 @@ footer ul{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    top: 190px;
+    top: 120px;
     left: 1135px;
 }
 #python {
     position: relative;
-    bottom: 10px;
+    top: 220px;
     left: 600px;
     margin: 0px auto;
     font-size: 30px;
@@ -570,7 +569,7 @@ footer ul{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    bottom: 20px;
+    top: 215px;
     left: 1320px;
 }
 
