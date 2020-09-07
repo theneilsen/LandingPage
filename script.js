@@ -41,4 +41,67 @@ gsap.to(".port", {
     },    
     y: -100
 })
+gsap.to("#html", {
+    scrollTrigger: {
+        trigger: '#html', 
+        toggleActions: "restart none reverse none",
+        start: "top bottom",
+        end: "top 90%"
+    },
+    y: -10
+})
+gsap.to("#css", {
+    scrollTrigger: {
+        trigger: '#css', 
+        toggleActions: "restart none reverse none",
+        start: "top bottom",
+        end: "top 90%"
+    },
+    y: -10
+})
+gsap.to("#js", {
+    scrollTrigger: {
+        trigger: '#js', 
+        toggleActions: "restart none reverse none",
+        start: "top bottom",
+        end: "top 90%"
+    },
+    y: -10
+})
+gsap.to("#python", {
+    scrollTrigger: {
+        trigger: '#python', 
+        toggleActions: "restart none reverse none",
+        start: "top bottom",
+        end: "top 90%"
+    },
+    y: -10
+})
+gsap.to("#and", {
+    scrollTrigger: {
+        trigger: '#and', 
+        toggleActions: "restart none reverse none",
+        start: "top bottom",
+        end: "top 90%"
+    },
+    y: -10
+})
+gsap.to("#wordpress", {
+    scrollTrigger: {
+        trigger: '#wordpress', 
+        toggleActions: "restart none reverse none",
+        start: "top bottom",
+        end: "top 90%"
+    },
+    y: -10
+})
+gsap.to("#flutter", {
+    scrollTrigger: {
+        trigger: '#flutter', 
+        toggleActions: "restart none reverse none",
+        start: "top bottom",
+        end: "top 90%"
+    },
+    y: -10,  
+})
 
