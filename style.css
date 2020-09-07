@@ -216,7 +216,7 @@ a{
 .type{
     position: absolute;
     left: 34%;
-    top: 115%;
+    top: 125%;
 }
 .type2{
     position: absolute;
@@ -243,7 +243,7 @@ a{
     position: absolute;
     top: 220%;
     left: 3%;
-    transform: rotate(-3deg);
+    
     border-radius: 10px 10px 10px 0;
 }
 .prods{
@@ -266,7 +266,7 @@ a{
     position: absolute;
     top: 320%;
     right: 3%;
-    transform: rotate(3deg);
+    
     border-radius: 10px 10px 10px 0;
 }
 .business {
@@ -289,7 +289,7 @@ a{
     position: absolute;
     top: 420%;
     left: 3%;
-    transform: rotate(-3deg);
+    
     border-radius: 10px 10px 10px 0;
 }
 .portfolio {
