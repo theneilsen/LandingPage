@@ -12,7 +12,7 @@ function togglepopup(){
     document.getElementById("popup1").classList.toggle("active");
 }
 function scrolldown() {
-   window.scrollBy(0,1440);
+   window.scrollBy(0,1450);
 }
 gsap.to(".product", {
     scrollTrigger: {
