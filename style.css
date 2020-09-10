@@ -660,7 +660,7 @@ footer ul{
     }
     footer ul {
         position: relative;
-        top: 50px;
+        margin: auto;
     }
     #insta {
         width: 30px;
