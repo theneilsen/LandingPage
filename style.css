@@ -7,6 +7,7 @@
 }
 body {
     margin: 0;
+    max-width: 100%;
 }
 .wrapper {
     background-color: #111111;
@@ -562,12 +563,27 @@ footer ul li {
         color: #0D0D0D;
         animation: pageload 8s;
     }
+    .langs {
+        width:fit-content;
+        margin: auto;
+        display: block;
+        float: none;
+    }
 }
 
 @media screen and (max-width: 1050px) 
 {
+    .wrapper {
+        max-height: 100vh;
+    }
     .design {
-        font-size: 80px;
+        font-size: 12vw;
+    }
+    .thoughts {
+        font-size: 5vw;
+    }
+    .idea {
+        font-size: 2vw;
     }
     nav ul li a {
         font-size: 20px;
@@ -600,24 +616,57 @@ footer ul li {
         font-size: 17px;
         margin: 0 20px;
     }
+    .langs {
+        width:fit-content;
+        margin: auto;
+        display: block;
+        float: none;
+    }
 }
 @media screen and (max-width: 800px) 
 {
     nav ul li {
-        display: inline-block;
+        display: block;
         position: relative;
         bottom: 50px;
-        
+        margin: 0 40px;
     }
     nav ul li a {
         font-size: 17px;
-        margin: 0 20px;
+    }
+    .services {
+        position: relative;
+        bottom: 30px;
+    }
+    .langs {
+        width:fit-content;
+        margin: auto;
+        display: block;
+        float: none;
     }
 }
 @media screen and (max-width: 625px)
 {
+    .brand {
+        font-size: 8vw;
+    }
+    nav ul li {
+        display: block;
+        position: relative;
+        top: 1px;
+        margin: 0 40px;
+    }
     .design{
-        font-size: 50px;
+        font-size: 60px;
+        top: 30px;
+    }
+    .thoughts {
+        font-size: 6vw;
+        top: 10px
+    }
+    .idea {
+        font-size: 4vw;
+        top: 10px;
     }
     .product {
         left: 5%;
@@ -654,5 +703,84 @@ footer ul li {
         font-weight: lighter;
         color: #0D0D0D;
         animation: pageload 8s;
+    }
+}
+
+@media screen and (max-width : 480px) 
+{
+    .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+        width: auto;
+    }
+    nav ul li {
+        display: block;
+        position: relative;
+        bottom: 50px;
+        margin: 0 auto;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .brand {
+        width: fit-content;
+        margin: auto;
+        display: block;
+        float: none;
+        font-size: 6vw;
+        letter-spacing: 0.7cm;
+    }    
+    .design{
+        position: relative;
+        top: 30px;
+        font-size: 12vw;
+    }
+    .thoughts {
+        font-size: 5vw;
+        position: relative;
+        top: 10px;
+    }
+    .idea {
+        position: relative;
+        top: 10px;
+        font-size: 3.5vw;
+    }
+    .typing1{
+        font-size: 6vw;
+    }
+    .typing2{
+        font-size: 6vw ;
+    }
+    .typ3{
+        font-size: 6vw ;
+    }
+    .typ4{
+        font-size: 6vw ;
+    }
+    #html {
+        font-size: 35px;
+    }
+    #css {
+        font-size: 30px;
+        
+    }
+    #js {
+        font-size: 35px;
+    }
+    #python {
+        font-size: 25px; 
+    }
+    #and {
+        font-size: 30px;
+    }
+    #wordpress{
+        font-size: 30px;
+    }
+    #flutter {
+        font-size: 10px;
+    }
+    .langs{
+        margin-left: 100px;
     }
 }
