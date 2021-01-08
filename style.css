@@ -357,7 +357,6 @@ nav ul li a {
     left: 70px;
     color: white;
     margin: 0px auto;
-    
     font-size: 35px;
     text-align: center;
 }
@@ -648,7 +647,8 @@ footer ul li {
 @media screen and (max-width: 625px)
 {
     .brand {
-        font-size: 8vw;
+        font-size: 5vw;
+        letter-spacing: 0.8cm;
     }
     nav ul li {
         display: block;
@@ -759,28 +759,86 @@ footer ul li {
         font-size: 6vw ;
     }
     #html {
-        font-size: 35px;
+        font-size: 45px;
+        top: 292px;
+        right: 120px;
     }
     #css {
-        font-size: 30px;
-        
+        font-size: 35px;
+        right: 50px;
     }
     #js {
-        font-size: 35px;
+        
+        left: 20px;
     }
     #python {
         font-size: 25px; 
+        left: 90px;
     }
     #and {
-        font-size: 30px;
+        font-size: 40px;
+        right: 90px;
     }
     #wordpress{
-        font-size: 30px;
+        font-size: 40px;
+        right: 15px;
     }
     #flutter {
         font-size: 10px;
+        left: 60px;
     }
-    .langs{
-        margin-left: 100px;
+    .langs {
+        width: fit-content;
+        margin: auto;
+        display: block;
+        float: none;
+    }
+}
+
+@media screen and (max-width : 360px)
+{
+    .design {
+        top: 60px;
+        font-size: 12vw;
+    }
+    .thoughts {
+        top: 60px;
+        font-size: 7vw;
+    }
+    .idea {
+        top: 70px;
+        font-size: 4.5vw;
+    }
+    #html {
+        font-size: 45px;
+        top: 292px;
+        right: 120px;
+    }
+    #css {
+        font-size: 35px;
+        right: 50px;
+    }
+    #js {
+        
+        left: 20px;
+    }
+    #python {
+        font-size: 25px; 
+        left: 90px;
+    }
+    #and {
+        font-size: 40px;
+        right: 90px;
+    }
+    #wordpress{
+        font-size: 40px;
+        right: 15px;
+    }
+    #flutter {
+        font-size: 10px;
+        left: 60px;
+    }
+    .langs {
+        margin-left: 150px;
     }
 }
