@@ -818,13 +818,14 @@ footer ul li {
     }
     .portfolio {
         position: relative;
-        top: 300px;
+        top: 350px;
         left: 0;
         width: fit-content;
         margin: auto;
         display: block;
         float: none;
         font-size: 25px;
+        line-height: 0vw;
     }
     .backtotop {
         right: 15px;
@@ -867,6 +868,14 @@ footer ul li {
         width: 20px;
         height: 20px;
         border-radius: 50px;
+    }
+    .page3 {
+        max-height:100%;
+        background-color: aqua;
+    }
+    .page4 {
+        max-height:100%;
+        background-color: lightcoral;    
     }
 }
 
