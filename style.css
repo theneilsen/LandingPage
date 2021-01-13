@@ -876,6 +876,14 @@ footer ul li {
         max-height:100%;
         background-color: lightcoral;    
     }
+    .services:hover{
+        color: white;
+        background-color: black;
+        padding: none;
+        transition: none ;
+        border-radius: none;
+        box-shadow: none;
+    }
 }
 
 @media screen and (max-width : 360px)
