@@ -102,18 +102,18 @@ nav ul li a {
 .page2{
     max-width: 100%;
     min-height: 100vh;
-    background: white;
+    background: lightgreen;
 }
 .page3 {
     min-width: 100%;
     min-height: 100vh;
-    background: white;
+    background: lightpink;
     overflow-x: hidden;
 }
 .page4{
     min-width: 100%;
     min-height: 100vh;
-    background: white;
+    background: lightseagreen;
 }
 .page5{
     min-width: 100%;
@@ -367,10 +367,11 @@ nav ul li a {
     display: block;
     float: none;
 }
+
 .product {
     border: 2px solid rgb(189, 125, 189);
-    position: absolute;
-    top: 220%;
+    position: relative;
+    top: 140px;
     left: 3%;
     border-radius: 10px 10px 10px 0;
 }
@@ -385,10 +386,9 @@ nav ul li a {
 }
 .bus{
     border: 2px solid rgb(189, 125, 189);
-    position: absolute;
-    top: 320%;
-    right: 3%;
-    
+    position: relative;
+    top: 140px;
+    left: 33%;
     border-radius: 10px 10px 10px 0;
 }
 .business {
@@ -402,8 +402,8 @@ nav ul li a {
 }
 .port{
     border: 2px solid rgb(189, 125, 189);
-    position: absolute;
-    top: 420%;
+    position: relative;
+    top: 140px;
     left: 3%;
     border-radius: 10px 10px 10px 0;
 }
@@ -537,7 +537,7 @@ footer ul li {
         top: 285%;
     }
     .bus{
-        right: 15%;
+        left: 15%;
         width: 70%;
         height: auto;
     }
@@ -679,7 +679,7 @@ footer ul li {
         top: 285%;
     }
     .bus{
-        right: 5%;
+        left: 5%;
         width: 90%;
         height: auto;
     }
@@ -796,7 +796,7 @@ footer ul li {
     }
     .prods {
         position: relative;
-        top: 300px;
+        top: 50px;
         left: 0;
         width: fit-content;
         margin: auto;
@@ -807,18 +807,17 @@ footer ul li {
     }
     .business {
         position: relative;
-        top: 300px;
+        top: 50px;
         left: 0;
         width: fit-content;
         margin: auto;
         display: block;
         float: none;
         font-size: 25px;
-
     }
     .portfolio {
         position: relative;
-        top: 350px;
+        top: 70px;
         left: 0;
         width: fit-content;
         margin: auto;
@@ -925,22 +924,18 @@ footer ul li {
     .langs {
         margin-left: 150px;
     }
-    .prods {
-        position: relative;
-        top: 250px;
-    }
-    .business {
-        position: relative;
-        top: 250px;
-    }
-    .portfolio {
-        position: relative;
-        top: 250px;
-    }
     .backtotop {
         right: 15px;
     }
     .page5 {
-        background-color: lightpink;
+        background-color: lightcyan;
+    }
+    .services:hover{
+        color: white;
+        background-color: black;
+        padding: none;
+        transition: none ;
+        border-radius: none;
+        box-shadow: none;
     }
 }
