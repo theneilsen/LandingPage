@@ -102,18 +102,18 @@ nav ul li a {
 .page2{
     max-width: 100%;
     min-height: 100vh;
-    background: lightgreen;
+    background: white;
 }
 .page3 {
     min-width: 100%;
     min-height: 100vh;
-    background: lightpink;
+    background: white;
     overflow-x: hidden;
 }
 .page4{
     min-width: 100%;
     min-height: 100vh;
-    background: lightseagreen;
+    background: white;
 }
 .page5{
     min-width: 100%;
@@ -870,11 +870,9 @@ footer ul li {
     }
     .page3 {
         max-height:100%;
-        background-color: aqua;
     }
     .page4 {
-        max-height:100%;
-        background-color: lightcoral;    
+        max-height:100%;   
     }
     .services:hover{
         color: white;
