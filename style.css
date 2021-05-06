@@ -9,6 +9,7 @@ body {
     margin: 0;
     max-width: 100%;
     height: 100%;
+    background: #111111;
 }
 .wrapper {
     background-color: #111111;
@@ -16,45 +17,46 @@ body {
     min-height: 100vh;
 }
 .brand {
+    /* position: fixed; */
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    font-size: 50px;
+    font-size: 40px;
     padding: 50px;
     letter-spacing: 1.1cm;
     cursor: pointer;
     text-shadow: 3.5px 3.5px 3.5px rgba(255, 255, 255, 0.25);
 }
 nav {
-    float: right;
+    position: absolute;
+    top: 10%;
+    left: 70%;
     padding: 0px 20px 0px 0;
+    font-size: 20px;
 }
 nav ul li {
     display: inline-block;
-    position: relative;
-    bottom: 90px;
 }
 nav ul li a {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    margin: 0 60px;
 }
-.services:hover{
-    color: black;
-    background: white;
-    padding: 0.2rem 0.3rem;
-    transition: .15s ;
-    border-radius: 2rem;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+.services {
+    margin-right: 100px;
+    width: 100px;
+    height: 100px;
 }
+.services:hover {
+    color: rgb(182, 182, 182);  
+}
+
 .about {
     background: white; 
     color: #0D0D0D;
-    padding: 0.2rem 0.4rem;
-    border-radius: 2rem;
-    animation: pageload 7.4s ease-out;
+    padding: 0.18rem 0.4rem;
+    border-radius: 0.4rem;
+    animation: pageload 7.5s ease-out;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 .about:hover {
@@ -62,18 +64,48 @@ nav ul li a {
     background: none;
     transition: .25s ease-in-out;
 }
+.holder {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .design {
     width: fit-content;
     margin: auto;
     display: block;
     float: none;
     font-size: 130px;
-    color: white;
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255 , 0.040); 
     position: relative;
     bottom: 50px;
-
+    animation: desanime 1s;
+    animation-delay: 3.8s;
+}
+@keyframes desanime {
+    0%{
+        opacity: 0;
+    } 
+    100% {   
+        opacity: 100%;
+    }
+}
+@keyframes thoanime {
+    0%{
+        opacity: 0;
+    } 
+    100% {   
+        opacity: 100%;
+    }
+}
+@keyframes ideasanime {
+    0%{
+        opacity: 0;
+    } 
+    100% {   
+        opacity: 100%;
+    }
 }
 .thoughts {
     width: fit-content;
@@ -81,11 +113,12 @@ nav ul li a {
     display: block;
     float: none;
     font-size: 40px;
-    color: white;
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255 , 0.040);
     position: relative;
     bottom: 70px;
+    animation: thoanime 2s;
+    animation-delay: 3.8s;
 }
 .idea {
     width: fit-content;
@@ -93,32 +126,34 @@ nav ul li a {
     display: block;
     float: none;
     font-size: 30px;
-    color: white;
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255 , 0.040);
     position: relative;
     bottom: 50px;
+    animation: ideasanime 3s;
+    animation-delay: 3.8s;
 }
 .page2{
     max-width: 100%;
     min-height: 100vh;
-    background: white;
+    background: #111111;
+    position: relative;
 }
 .page3 {
     min-width: 100%;
     min-height: 100vh;
-    background: white;
+    background: #111111;
     overflow-x: hidden;
 }
 .page4{
     min-width: 100%;
     min-height: 100vh;
-    background: white;
+    background: #111111;
 }
 .page5{
     min-width: 100%;
     min-height: 100vh;
-    background: white;
+    background: #111111;
 }
 .popup .overlay{
     position: fixed;
@@ -173,33 +208,37 @@ nav ul li a {
     overflow: hidden;
     white-space: nowrap;
     display: block;
-    
+    color: white;
     font-family: 'Poppins',sans-serif;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: lighter;
 }
 .typing2{
     overflow: hidden;
     white-space: nowrap;
     display: block;
-    
+    color: white;
     font-family: 'Poppins',sans-serif;
-    font-size: 40px ;
+    font-size: 30px ;
+    font-weight: lighter;
 }
 .typ3{
     overflow: hidden;
     white-space: nowrap;
     display: block;
-    
+    color: white;
     font-family: 'Poppins',sans-serif;
-    font-size: 40px ;
+    font-size: 30px ;
+    font-weight: lighter;
 }
 .typ4{
     overflow: hidden;
     white-space: nowrap;
     display: block;
-    
+    color: white;
     font-family: 'Poppins',sans-serif;
-    font-size: 40px ;
+    font-size: 30px ;
+    font-weight: lighter;
 }
 .typing1::after,.typing2::after {
     content: "|";
@@ -284,6 +323,7 @@ nav ul li a {
     animation: caret infinite;
     animation-duration: 1s;
     animation-timing-function: steps(15, end);
+    
 }
 
 .type h1, .type2 h1{
@@ -300,10 +340,32 @@ nav ul li a {
     position: relative;
     top: 80px;
 }
+.langs {
+    position: absolute;
+    top: 51%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    animation: scale 3s infinite;
+}
+@keyframes scale {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    50% {
+        opacity: 100%;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 #html {
     position: relative;
-    top: 300px;
-    right: 200px;
+    top: 130px;
+    right: 30px;
     color: rgb(252, 105, 7);
     margin: 0px auto;
     font-size: 50px;
@@ -311,8 +373,8 @@ nav ul li a {
 }
 #css {
     position: relative;
-    top: 250px;
-    right: 100px;
+    top: 320px;
+    right: 200px;
     color: rgb(56, 101, 248);
     margin: 0px auto; 
     font-size: 40px;
@@ -320,24 +382,24 @@ nav ul li a {
 }
 #js {
     position: relative;
-    top: 185px;
-    left: 10px; 
+    top: 380px; 
+    left: 80px;
     margin: 0px auto; 
     font-size: 45px;
     text-align: center;
 }
 #python {
     position: relative;
-    top: 113px;
-    left: 120px;
+    top: 40px;
+    left: 130px;
     margin: 0px auto;
     font-size: 30px;
     text-align: center;   
 }
 #and {
     position: relative;
-    top: 140px;
-    right: 150px;
+    top: 260px;
+    right: 120px;
     color: rgb(0, 255, 76);
     margin: 0px auto;
     font-size: 40px;
@@ -345,8 +407,8 @@ nav ul li a {
 }
 #wordpress{
     position: relative;
-    top: 95px;
-    right: 40px;
+    bottom: 55px;
+    right: 190px;
     color: rgb(7, 203, 252);
     margin: 0px auto;
     font-size: 40px;
@@ -354,18 +416,12 @@ nav ul li a {
 }
 #flutter {
     position: relative;
-    top: 50px;
-    left: 70px;
+    top: 40px;
+    left: 170px;
     color: white;
     margin: 0px auto;
     font-size: 35px;
     text-align: center;
-}
-.langs {
-    width:fit-content;
-    margin: auto;
-    display: block;
-    float: none;
 }
 
 .product {
@@ -382,7 +438,7 @@ nav ul li a {
     position: absolute;
     left: 74.6%;
     top: 230%;
-    color: #070B33;
+    color: #ffffff;
 }
 .bus{
     border: 2px solid rgb(189, 125, 189);
@@ -398,7 +454,7 @@ nav ul li a {
     position: absolute;
     right: 77%;
     top: 330%;
-    color: #070B33;
+    color: #ffffff;
 }
 .port{
     border: 2px solid rgb(189, 125, 189);
@@ -414,7 +470,7 @@ nav ul li a {
     position: absolute;
     left: 77%;
     top: 430%;
-    color: #070B33;
+    color: #ffffff;
 }
 .backtotop {
     position: fixed;
@@ -422,12 +478,20 @@ nav ul li a {
     bottom: 135px;
     font-size: 20px;
     font-weight: lighter;
-    color: #111111;
+    color: white;
     animation: pageload 8s;
+    font-weight: lighter;
 }
 footer {
-    background-color: #111111;
+    background-color: black;
     min-height: 10vh;
+    max-width: 98vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    animation: pageload 8s ease-out;
 }
 footer ul{
     display: flex;
@@ -560,7 +624,7 @@ footer ul li {
         bottom: 135px;
         font-size: 20px;
         font-weight: lighter;
-        color: #0D0D0D;
+        color: white;
         animation: pageload 8s;
     }
     .langs {
@@ -585,12 +649,12 @@ footer ul li {
     .idea {
         font-size: 2vw;
     }
-    nav ul li a {
+    nav ul li {
         font-size: 20px;
-        margin: 0 30px;
+        margin: 15px 30px;
     }
     .brand {
-        font-size:40px;
+        font-size: 4vw;
     }
     .typing1{
         font-size: 30px;
@@ -612,9 +676,9 @@ footer ul li {
 
 @media screen and (max-width: 900px) 
 {
-    nav ul li a {
-        font-size: 17px;
-        margin: 0 20px;
+    nav ul li {
+        font-size: 2.2vw;
+        margin: 10px 10px;
     }
     .langs {
         width:fit-content;
@@ -628,12 +692,10 @@ footer ul li {
     nav ul li {
         display: block;
         position: relative;
-        bottom: 50px;
-        margin: 0 40px;
+        top: 30px;
+        margin: 0;
     }
-    nav ul li a {
-        font-size: 17px;
-    }
+    
     .services {
         position: relative;
         bottom: 30px;
@@ -648,14 +710,15 @@ footer ul li {
 @media screen and (max-width: 625px)
 {
     .brand {
-        font-size: 5vw;
-        letter-spacing: 0.8cm;
+        font-size: 5.2vw;
+        letter-spacing: 1cm;
+        text-align: center;
     }
     nav ul li {
         display: block;
         position: relative;
-        top: 1px;
-        margin: 0 40px;
+        top: 40px;
+        
     }
     .design{
         font-size: 60px;
@@ -702,7 +765,7 @@ footer ul li {
         bottom: 135px;
         font-size: 20px;
         font-weight: lighter;
-        color: #0D0D0D;
+        color: white;
         animation: pageload 8s;
     }
 }
@@ -725,12 +788,13 @@ footer ul li {
         font-size: 14px;
     }
     .brand {
+        text-align: center;
         width: fit-content;
         margin: auto;
         display: block;
         float: none;
-        font-size: 6vw;
-        letter-spacing: 0.7cm;
+        font-size: 5.25vw;
+        letter-spacing: 0.9cm;
     }    
     .design{
         position: relative;
@@ -796,7 +860,7 @@ footer ul li {
     }
     .prods {
         position: relative;
-        top: 50px;
+        top: 60px;
         left: 0;
         width: fit-content;
         margin: auto;
@@ -807,7 +871,7 @@ footer ul li {
     }
     .business {
         position: relative;
-        top: 50px;
+        top: 60px;
         left: 0;
         width: fit-content;
         margin: auto;
@@ -817,7 +881,7 @@ footer ul li {
     }
     .portfolio {
         position: relative;
-        top: 70px;
+        top: 75px;
         left: 0;
         width: fit-content;
         margin: auto;
@@ -884,8 +948,14 @@ footer ul li {
     }
 }
 
-@media screen and (max-width : 360px)
+@media screen and (max-width : 400px)
 {
+    .brand {
+        
+        position: relative;
+        text-align: center;
+        font-size: 6vw;
+    }
     .design {
         top: 60px;
         font-size: 12vw;
@@ -928,13 +998,10 @@ footer ul li {
         left: 60px;
     }
     .langs {
-        margin-left: 150px;
+        margin-left: 160px;
     }
     .backtotop {
         right: 15px;
-    }
-    .page5 {
-        background-color: lightcyan;
     }
     .services:hover{
         color: white;
