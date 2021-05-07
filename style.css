@@ -590,7 +590,7 @@ footer ul li {
     animation: pageload 8s;
 }
 
-@media screen and (max-width: 1450px) {
+@media only screen and (max-width: 1450px) {
     .product {
         left: 15%;
         width: 70%;
@@ -635,7 +635,7 @@ footer ul li {
     }
 }
 
-@media screen and (max-width: 1050px) 
+@media only screen and (max-width: 1050px) 
 {
     .wrapper {
         min-height: 100vh;
@@ -674,7 +674,7 @@ footer ul li {
     }
 }
 
-@media screen and (max-width: 900px) 
+@media only screen and (max-width: 900px) 
 {
     nav ul li {
         font-size: 2.2vw;
@@ -687,7 +687,7 @@ footer ul li {
         float: none;
     }
 }
-@media screen and (max-width: 800px) 
+@media only screen and (max-width: 800px) 
 {
     nav ul li {
         display: block;
@@ -707,7 +707,7 @@ footer ul li {
         float: none;
     }
 }
-@media screen and (max-width: 625px)
+@media only screen and (max-width: 625px)
 {
     .brand {
         font-size: 5.2vw;
@@ -770,8 +770,7 @@ footer ul li {
     }
 }
 
-@media screen and (max-width : 480px) 
-{
+@media only screen and (max-width : 491px) {
     .wrapper {
         max-width: 100%;
         margin: 0 auto;
@@ -779,20 +778,21 @@ footer ul li {
         width: auto;
     }
     nav ul li {
-        display: block;
-        position: relative;
-        bottom: 50px;
+        position: absolute;
+        right: 50px;
         margin: 0 auto;
+    }
+    .about {
+        position: absolute;
+        bottom: 8px;
+        right: 20px;
     }
     nav ul li a {
         font-size: 14px;
     }
     .brand {
         text-align: center;
-        width: fit-content;
-        margin: auto;
-        display: block;
-        float: none;
+        
         font-size: 5.25vw;
         letter-spacing: 0.9cm;
     }    
@@ -948,10 +948,9 @@ footer ul li {
     }
 }
 
-@media screen and (max-width : 400px)
+@media only screen and (max-width : 400px)
 {
     .brand {
-        
         position: relative;
         text-align: center;
         font-size: 6vw;
@@ -1011,4 +1010,26 @@ footer ul li {
         border-radius: none;
         box-shadow: none;
     }
+}
+@media only screen and (max-width: 585px) {
+    .brand {
+        font-size: 1.8rem;
+    }
+    nav ul li { 
+        position: absolute;
+        top: 50px;
+        
+    }
+}
+@media only screen and (max-width: 402px) {
+    .brand {
+        font-size: 5vw;
+        
+    }
+    nav { 
+        position: absolute;
+        right: 25px;
+    }
+
+    
 }
