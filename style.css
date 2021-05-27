@@ -1,56 +1,50 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
-}
+} 
 body {
     margin: 0;
-    max-width: 100%;
-    height: 100%;
     background: #111111;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-.wrapper {
-    background-color: #111111;
-    max-width: 100%;
-    min-height: 100vh;
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
 }
 .brand {
-    /* position: fixed; */
+    font-size: 1.8rem;
+    text-align: center;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    font-size: 40px;
-    padding: 50px;
-    letter-spacing: 1.1cm;
+    letter-spacing: 1cm;
     cursor: pointer;
     text-shadow: 3.5px 3.5px 3.5px rgba(255, 255, 255, 0.25);
+    margin-top: 1em;
 }
-nav {
-    position: absolute;
-    top: 10%;
-    left: 70%;
-    padding: 0px 20px 0px 0;
-    font-size: 20px;
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 0;
 }
-nav ul li {
-    display: inline-block;
+nav li {
+    margin: 0 1em;
 }
-nav ul li a {
+nav a {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-.services {
-    margin-right: 100px;
-    width: 100px;
-    height: 100px;
-}
+
 .services:hover {
     color: rgb(182, 182, 182);  
 }
-
 .about {
     background: white; 
     color: #0D0D0D;
@@ -65,23 +59,44 @@ nav ul li a {
     transition: .25s ease-in-out;
 }
 .holder {
+    display: flex;
+    flex-direction: column;    
+    margin: 0 auto ;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255 , 0.040);
+    margin-bottom: 0;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .design {
-    width: fit-content;
-    margin: auto;
-    display: block;
-    float: none;
-    font-size: 130px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255 , 0.040); 
-    position: relative;
-    bottom: 50px;
+    font-size: 7rem;
+    margin-bottom: 0;
+    margin: 0;
     animation: desanime 1s;
     animation-delay: 3.8s;
+    
+}
+.thoughts {
+    margin: 0;
+    font-size: 3.25rem;
+    margin-bottom: 0;
+    position: relative;
+    left: 1.85em;
+    animation: thoanime 2s;
+    animation-delay: 3.8s;
+    
+}
+.idea {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 0;
+    position: relative;
+    left: 5.5em;
+    animation: ideasanime 3s;
+    animation-delay: 3.8s;
+   
 }
 @keyframes desanime {
     0%{
@@ -107,55 +122,8 @@ nav ul li a {
         opacity: 100%;
     }
 }
-.thoughts {
-    width: fit-content;
-    margin: auto;
-    display: block;
-    float: none;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255 , 0.040);
-    position: relative;
-    bottom: 70px;
-    animation: thoanime 2s;
-    animation-delay: 3.8s;
-}
-.idea {
-    width: fit-content;
-    margin: auto;
-    display: block;
-    float: none;
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255 , 0.040);
-    position: relative;
-    bottom: 50px;
-    animation: ideasanime 3s;
-    animation-delay: 3.8s;
-}
-.page2{
-    max-width: 100%;
-    min-height: 100vh;
-    background: #111111;
-    position: relative;
-}
-.page3 {
-    min-width: 100%;
-    min-height: 100vh;
-    background: #111111;
-    overflow-x: hidden;
-}
-.page4{
-    min-width: 100%;
-    min-height: 100vh;
-    background: #111111;
-}
-.page5{
-    min-width: 100%;
-    min-height: 100vh;
-    background: #111111;
-}
 .popup .overlay{
+    
     position: fixed;
     top: 0px;
     left: 0px;
@@ -166,6 +134,7 @@ nav ul li a {
     display: none;
 }
 .popup .content{
+    
     position: fixed;
     top:50%;
     left: 50%;
@@ -198,9 +167,11 @@ nav ul li a {
     border-radius: 50px;
 }
 .popup.active .overlay{
+    
     display: block;
 }
 .popup.active .content{
+    margin: 0 auto;
     transition: all 300ms ease-in-out;
     transform: translate(-50% , -50%) scale(1);
 }
@@ -325,7 +296,6 @@ nav ul li a {
     animation-timing-function: steps(15, end);
     
 }
-
 .type h1, .type2 h1{
     width: fit-content;
     margin: auto;
@@ -340,165 +310,17 @@ nav ul li a {
     position: relative;
     top: 80px;
 }
-.langs {
-    position: absolute;
-    top: 51%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    animation: scale 3s infinite;
-}
-@keyframes scale {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    50% {
-        opacity: 100%;
-        visibility: visible;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-#html {
-    position: relative;
-    top: 130px;
-    right: 30px;
-    color: rgb(252, 105, 7);
-    margin: 0px auto;
-    font-size: 50px;
-    text-align: center;
-}
-#css {
-    position: relative;
-    top: 320px;
-    right: 200px;
-    color: rgb(56, 101, 248);
-    margin: 0px auto; 
-    font-size: 40px;
-    text-align: center;
-}
-#js {
-    position: relative;
-    top: 380px; 
-    left: 80px;
-    margin: 0px auto; 
-    font-size: 45px;
-    text-align: center;
-}
-#python {
-    position: relative;
-    top: 40px;
-    left: 130px;
-    margin: 0px auto;
-    font-size: 30px;
-    text-align: center;   
-}
-#and {
-    position: relative;
-    top: 260px;
-    right: 120px;
-    color: rgb(0, 255, 76);
-    margin: 0px auto;
-    font-size: 40px;
-    text-align: center;
-}
-#wordpress{
-    position: relative;
-    bottom: 55px;
-    right: 190px;
-    color: rgb(7, 203, 252);
-    margin: 0px auto;
-    font-size: 40px;
-    text-align: center;
-}
-#flutter {
-    position: relative;
-    top: 40px;
-    left: 170px;
-    color: white;
-    margin: 0px auto;
-    font-size: 35px;
-    text-align: center;
-}
-
-.product {
-    border: 2px solid rgb(189, 125, 189);
-    position: relative;
-    top: 140px;
-    left: 3%;
-    border-radius: 10px 10px 10px 0;
-}
-.prods{
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: lighter;
-    position: absolute;
-    left: 74.6%;
-    top: 230%;
-    color: #ffffff;
-}
-.bus{
-    border: 2px solid rgb(189, 125, 189);
-    position: relative;
-    top: 140px;
-    left: 33%;
-    border-radius: 10px 10px 10px 0;
-}
-.business {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: lighter;
-    position: absolute;
-    right: 77%;
-    top: 330%;
-    color: #ffffff;
-}
-.port{
-    border: 2px solid rgb(189, 125, 189);
-    position: relative;
-    top: 140px;
-    left: 3%;
-    border-radius: 10px 10px 10px 0;
-}
-.portfolio {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: lighter;
-    position: absolute;
-    left: 77%;
-    top: 430%;
-    color: #ffffff;
-}
-.backtotop {
-    position: fixed;
-    right: 50px;
-    bottom: 135px;
-    font-size: 20px;
-    font-weight: lighter;
-    color: white;
-    animation: pageload 8s;
-    font-weight: lighter;
-}
 footer {
+    margin: 0;
     background-color: black;
-    min-height: 10vh;
-    max-width: 98vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    animation: pageload 8s ease-out;
+    min-height: 11vh;
 }
-footer ul{
+footer ul {
     display: flex;
-    justify-content: space-evenly;
-}
-footer ul li {
-    padding-top: 25px; 
+    padding: 1.75em;
+    justify-content: space-around;
 }
 #fb{
     font-size: 32px;
@@ -512,524 +334,102 @@ footer ul li {
     font-size: 32px;
     color: white;
 }
-.anime {
+.imgs {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 960px; 
+    border: 2px solid rgb(189, 125, 189);
+    border-radius: 6px 6px 6px 0;      
+}
+.cat {
+    margin: 15em 0;
+    border-bottom: 1px solid white;
+}
+.cat h1{
+    position: relative;
+    bottom: 80px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+.cat1 {
+    
+} 
+.backtotop {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    transform: translate(-50%,-50%);
-    transform-origin: bottom center;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-.circle {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    display: inline-block;
-    animation: loading 1.38s ease-in-out infinite; 
-    margin: 3.5px;
-}
-.circle1 {
-    animation-delay: 0.1s;
-}
-.circle2 { 
-    animation-delay: 0.2s;
-}
-.circle3 {
-    animation-delay: 0.3s;
-}
-.circle4 {
-    animation-delay: 0.4s;
-}
-.circle5 {
-    animation-delay: 0.5s;
-}
-@keyframes loading {
-    0% {
-        transform: translate(0px,0px);
-        background: transparent;
-    }
-    50% {
-        width: 7.5px;
-        height: 7.5px;
-        transform: translate(0px,-50px);
-        background: #0D0D0D;
-    }
-    100% {
-        transform: translate(0px,0px);
-        background: transparent;
-    }
-}
-.anime.hidden {
-    animation: animate 4s;
-    animation-fill-mode: forwards; 
-}
-@keyframes animate {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    0%,25% {
-        opacity: 100;
-        visibility: visible;       
-    }
-}
-@keyframes pageload {
-    0%,25%,50%{
-        visibility: hidden;
-    }
-    100% {   
-        visibility: visible;
-    }
-}
-.page2,.page3,.page4,.page5 {
+    right: 20px;
+    bottom: 135px;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    color: white;
     animation: pageload 8s;
+    font-weight: lighter;
 }
-
-@media only screen and (max-width: 1450px) {
-    .product {
-        left: 15%;
-        width: 70%;
-        height: auto;
-    }
-    .prods{
-        left: 40%;
-        top: 285%;
-    }
-    .bus{
-        left: 15%;
-        width: 70%;
-        height: auto;
-    }
-    .business {
-        right: 45%;
-        top: 385%;
-    }
-    .port{
-        left: 15%;
-        width: 70%;
-        height: auto;
-    }
-    .portfolio {
-        left: 45%;
-        top: 485%;
-    }
-    .backtotop {
-        position: fixed;
-        right: 50px;
-        bottom: 135px;
-        font-size: 20px;
-        font-weight: lighter;
-        color: white;
-        animation: pageload 8s;
-    }
-    .langs {
-        width:fit-content;
-        margin: auto;
-        display: block;
-        float: none;
-    }
-}
-
-@media only screen and (max-width: 1050px) 
-{
-    .wrapper {
-        min-height: 100vh;
-    }
-    .design {
-        font-size: 12vw;
-    }
-    .thoughts {
-        font-size: 5vw;
-    }
-    .idea {
-        font-size: 2vw;
-    }
-    nav ul li {
-        font-size: 20px;
-        margin: 15px 30px;
-    }
-    .brand {
-        font-size: 4vw;
-    }
-    .typing1{
-        font-size: 30px;
-    }
-    .typing2{
-        font-size: 30px ;
-    }
-    .typ3{
-        font-size: 30px ;
-    }
-    .typ4{
-        font-size: 30px ;
-    }
-    .prods{
-        left: 40%;
-        top: 260%;
-    }
-}
-
-@media only screen and (max-width: 900px) 
-{
-    nav ul li {
-        font-size: 2.2vw;
-        margin: 10px 10px;
-    }
-    .langs {
-        width:fit-content;
-        margin: auto;
-        display: block;
-        float: none;
-    }
-}
-@media only screen and (max-width: 800px) 
-{
-    nav ul li {
-        display: block;
-        position: relative;
-        top: 30px;
-        margin: 0;
-    }
+.langs {
     
-    .services {
-        position: relative;
-        bottom: 30px;
-    }
-    .langs {
-        width:fit-content;
-        margin: auto;
-        display: block;
-        float: none;
-    }
+    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
-@media only screen and (max-width: 625px)
-{
-    .brand {
-        font-size: 5.2vw;
-        letter-spacing: 1cm;
-        text-align: center;
-    }
-    nav ul li {
-        display: block;
-        position: relative;
-        top: 40px;
-        
-    }
-    .design{
-        font-size: 60px;
-        top: 30px;
-    }
-    .thoughts {
-        font-size: 6vw;
-        top: 10px
-    }
-    .idea {
-        font-size: 4vw;
-        top: 10px;
-    }
-    .product {
-        left: 5%;
-        width: 90%;
-        height: auto;
-    }
-    .prods{
-        left: 40%;
-        top: 285%;
-    }
-    .bus{
-        left: 5%;
-        width: 90%;
-        height: auto;
-    }
-    .business {
-        right: 45%;
-        top: 385%;
-    }
-    .port{
-        left: 5%;
-        width: 90%;
-        height: auto;
-    }
-    .portfolio {
-        left: 45%;
-        top: 485%;
-    }
-    .backtotop {
-        position: fixed;
-        right: 50px;
-        bottom: 135px;
-        font-size: 20px;
-        font-weight: lighter;
-        color: white;
-        animation: pageload 8s;
-    }
+#html {    
+    color: rgb(252, 105, 7);
+    font-size: 2.25em;
+}
+#css {
+    color: rgb(56, 101, 248);
+    font-size: 1.85em;
 }
 
-@media only screen and (max-width : 491px) {
-    .wrapper {
-        max-width: 100%;
-        margin: 0 auto;
-        height: auto;
-        width: auto;
-    }
-    nav ul li {
-        position: absolute;
-        right: 50px;
-        margin: 0 auto;
-    }
-    .about {
-        position: absolute;
-        bottom: 8px;
-        right: 20px;
-    }
-    nav ul li a {
-        font-size: 14px;
-    }
-    .brand {
-        text-align: center;
-        
-        font-size: 5.25vw;
-        letter-spacing: 0.9cm;
-    }    
-    .design{
-        position: relative;
-        top: 30px;
-        font-size: 12vw;
-    }
-    .thoughts {
-        font-size: 5vw;
-        position: relative;
-        top: 15px;
-    }
-    .idea {
-        position: relative;
-        top: 25px;
-        font-size: 3.5vw;
-    }
-    .typing1{
-        font-size: 6vw;
-    }
-    .typing2{
-        font-size: 6vw ;
-    }
-    .typ3{
-        font-size: 6vw ;
-    }
-    .typ4{
-        font-size: 6vw ;
-    }
-    #html {
-        font-size: 45px;
-        top: 292px;
-        right: 120px;
-    }
-    #css {
-        font-size: 35px;
-        right: 50px;
-    }
-    #js {
-        
-        left: 20px;
-    }
-    #python {
-        font-size: 25px; 
-        left: 90px;
-    }
-    #and {
-        font-size: 40px;
-        right: 90px;
-    }
-    #wordpress{
-        font-size: 40px;
-        right: 15px;
-    }
-    #flutter {
-        font-size: 10px;
-        left: 60px;
-    }
-    .langs {
-        width: fit-content;
-        margin: auto;
-        display: block;
-        float: none;
-    }
-    .prods {
-        position: relative;
-        top: 60px;
-        left: 0;
-        width: fit-content;
-        margin: auto;
-        display: block;
-        float: none;
-        font-size: 25px;
-
-    }
-    .business {
-        position: relative;
-        top: 60px;
-        left: 0;
-        width: fit-content;
-        margin: auto;
-        display: block;
-        float: none;
-        font-size: 25px;
-    }
-    .portfolio {
-        position: relative;
-        top: 75px;
-        left: 0;
-        width: fit-content;
-        margin: auto;
-        display: block;
-        float: none;
-        font-size: 25px;
-        line-height: 0vw;
-    }
-    .backtotop {
-        right: 15px;
-    }
-    .popup .overlay{
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0,0, 0, 0.8);
-        z-index: 1;
-        display: none;
-    }
-    .popup .content{
-        position: fixed;        
-        top:50%;
-        left: 50%;
-        transform: translate(-50% , -50%) scale(0);
-        background: white;
-        width: 80vw;
-        height: 75vh;
-        z-index: 99999;
-        padding: 38px;
-        text-align: center;
-        box-sizing: border-box;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        font-size: 15px;
-    }
-    .popup .close-btn{
-        cursor: pointer;
-        position: absolute;
-        top:17px;
-        right:15px;
-        background-color: #000;
-        color: white;
-        font-size: 20px;
-        line-height: 20px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50px;
-    }
-    .page3 {
-        max-height:100%;
-    }
-    .page4 {
-        max-height:100%;   
-    }
-    .services:hover{
-        color: white;
-        background-color: black;
-        padding: none;
-        transition: none ;
-        border-radius: none;
-        box-shadow: none;
-    }
+#wordpress {
+    color: rgb(7, 203, 252);
+    font-size: 35px;
 }
-
-@media only screen and (max-width : 400px)
-{
-    .brand {
-        position: relative;
-        text-align: center;
-        font-size: 6vw;
-    }
-    .design {
-        top: 60px;
-        font-size: 12vw;
-    }
-    .thoughts {
-        top: 60px;
-        font-size: 7vw;
-    }
-    .idea {
-        top: 70px;
-        font-size: 4.5vw;
-    }
-    #html {
-        font-size: 45px;
-        top: 292px;
-        right: 120px;
-    }
-    #css {
-        font-size: 35px;
-        right: 50px;
-    }
-    #js {
-        
-        left: 20px;
-    }
-    #python {
-        font-size: 25px; 
-        left: 90px;
-    }
-    #and {
-        font-size: 40px;
-        right: 90px;
-    }
-    #wordpress{
-        font-size: 40px;
-        right: 15px;
-    }
-    #flutter {
-        font-size: 10px;
-        left: 60px;
-    }
-    .langs {
-        margin-left: 160px;
-    }
-    .backtotop {
-        right: 15px;
-    }
-    .services:hover{
-        color: white;
-        background-color: black;
-        padding: none;
-        transition: none ;
-        border-radius: none;
-        box-shadow: none;
-    }
+#flutter {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
 }
-@media only screen and (max-width: 585px) {
-    .brand {
-        font-size: 1.8rem;
-    }
-    nav ul li { 
-        position: absolute;
-        top: 50px;
-        
-    }
+#and { 
+    color: rgb(0, 255, 76);
+    font-size: 40px;
 }
-@media only screen and (max-width: 402px) {
-    .brand {
-        font-size: 5vw;
-        
-    }
-    nav { 
-        position: absolute;
-        right: 25px;
-    }
-
-    
+#python {
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
 }
+#js {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+/* .cols {
+    width: 100%;
+    display: flex;
+}
+.madejust {
+    width: 50%;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    background: black;
+    font-family: 'Poppins',sans-serif;
+}
+.foryou {
+    padding: 1em 0;
+    width: 50%;
+    font-size: 4em;
+    text-align: center;
+    background: white;
+    font-family: 'Poppins',sans-serif;
+} */
