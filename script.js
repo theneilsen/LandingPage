@@ -1,3 +1,6 @@
+const scrolling = document.querySelector('.product');
+const totop = document.querySelector('.brand');
+
 window.addEventListener('load', ()=> {
     const anime = document.querySelector('.anime');
     anime.classList.add('hidden');
@@ -5,16 +8,19 @@ window.addEventListener('load', ()=> {
 
 const btn = document.querySelector('.backtotop');
 btn.addEventListener('click', ()=> {
-    window.scrollBy(0,100);
+    totop.scrollIntoView();
 });
 
-function togglepopup(){
+const btn2 = document.querySelector('.services');
+btn2.addEventListener('click', ()=> {
+    scrolling.scrollIntoView();
+});
+
+togglepopup= () => {
     document.getElementById("popup1").classList.toggle("active");
 }
-function scrolldown() {
-   window.scrollBy(0,1400);
-}
-gsap.to(".product", {
+
+ gsap.to(".product", {
     scrollTrigger: {
         trigger: '.product',
         toggleActions: "restart none reverse none",
@@ -41,12 +47,13 @@ gsap.to(".port", {
     },    
     y: -100
 })
-gsap.to("#html", {
+/* gsap.to("#html", {
     scrollTrigger: {
         trigger: '#html', 
         toggleActions: "restart none reverse none",
         start: "top bottom",
-        end: "top 90%"
+        end: "top 90%",
+    
     },
     y: -10
 })
@@ -100,8 +107,10 @@ gsap.to("#flutter", {
         trigger: '#flutter', 
         toggleActions: "restart none reverse none",
         start: "top bottom",
-        end: "top 90%"
+        end: "top 90%",
     },
-    y: -10,  
-})
+    y: -10,
+    
+}) */
+
 
