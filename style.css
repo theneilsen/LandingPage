@@ -99,7 +99,7 @@ nav a {
     width: fit-content;
 }
 .design {
-    font-size: 6rem;
+    font-size: 5.75rem;
     margin-bottom: 0;
     margin: 0;
     animation: desanime 1s;
@@ -538,8 +538,8 @@ footer ul {
         top: 275px;
     }
     .idea {
-        top: 362px;
-        left: 362px;
+        top: 352px;
+        left: 374px;
     }
     header {
         margin: 0;
