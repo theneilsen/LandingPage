@@ -21,47 +21,72 @@
          </section>
      </div>
 
-    <div class="container container-flex">
+    <header class="container">
             <h1 class="brand">neilsen</h1>
-            
             <nav>
                 <ul>
                     <li><a class="services" onclick="scrolldown()" href="#services">services</a></li>
                     <li><a class="about" onclick="togglepopup()" href="#about">about</a></li>
                 </ul>
             </nav>
+    </header>
 
-            <div class="holder">
-                <h1 class="design">designs</h1>
-                <h1 class="thoughts">thoughts</h1>
-                <h1 class="idea">ideas</h1>
+    <div class="container-flex">
+        <div class="holder">
+            <h1 class="design">designs</h1>
+            <h1 class="thou">thou</h1>
+            <h1 class="hts">hts</h1>
+            <h1 class="idea">idea</h1>
+        </div>
+
+        <div class="popup container" id = "popup1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglepopup()">&times;</div>
+                    <p>A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. 
+                        A paragraph consists of one or more sentences.</p>
             </div>
-    </div>
-
-    <div class="popup container container-flex" id = "popup1">
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="close-btn" onclick="togglepopup()">&times;</div>
-                <p>A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. 
-                    A paragraph consists of one or more sentences.</p>
         </div>
-    </div>
-
-    <section class="page2">
-        <div class="type">
-            <h1><span class="typing1">Hey there! This is Neilsen :)</span>
-            </h1>
-        </div>
-        <div class="type2">
-            <h1><span class="typing2">Freelancer</span>
-                <span class="typ3"> Web Developer</span>
-                <span class="typ4"> Android Developer</span>
-            </h1>
-        </div>
+    
+        <section class="page2">
+            <div class="type">
+                <h1><span class="typing1">Hey there! This is <span id="neilsen">Neilsen</span> :)</span>
+                </h1>
+            </div>
+            <div class="type2">
+                <h1><span class="typing2">Freelancer</span>
+                    <span class="typ3"> Web Developer</span>
+                    <span class="typ4"> Android Developer</span>
+                </h1>
+            </div>
+            
+        </section>
+        <section class="page3">
+            <div class="cat cat1">
+                <img class="imgs product" src="prod.png" alt="">
+                <h1 class="prods">Product Design</h1>
+            </div>
+        </section>
+    
+        <section class="page4">
+            <div class="cat cat2">
+                <img class="imgs bus" src="prod.png" alt="">
+                <h1 class="business">Business</h1>
+            </div>
+        </section>
         
-    </section>
+        <section class="page5">
+            <div class="cat cat3">
+                <img class="imgs port" src="prod.png" alt="">
+                <h1 class="portfolio">Portfolio</h1>
+            </div>
+        </section>
+    
+        <a class="backtotop" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
 
-    <div class="langs">
+
+    <!-- <div class="langs">
 
             <div id="html"><i class="fa fa-html5"></i></div>     
 
@@ -77,35 +102,13 @@
 
             <div id="flutter"><img src="./flutter.png" alt=""></div>
             
-    </div>
+    </div> -->
 
     <!-- <div class="cols">
         <div class="madejust">Made just</div>
         <div class="foryou">for you</div>
     </div> -->
 
-    <section class="page3">
-        <div class="cat cat1">
-            <img class="imgs product" src="prod.png" alt="">
-            <h1 class="prods">Product Design</h1>
-        </div>
-    </section>
-
-    <section class="page4">
-        <div class="cat cat2">
-            <img class="imgs bus" src="prod.png" alt="">
-            <h1 class="business">Business</h1>
-        </div>
-    </section>
-    
-    <section class="page5">
-        <div class="cat cat3">
-            <img class="imgs port" src="prod.png" alt="">
-            <h1 class="portfolio">Portfolio</h1>
-        </div>
-    </section>
-
-    <a class="backtotop" href="#"><i class="fa fa-chevron-up"></i></a>
 
     <footer>
         <ul class="social">
