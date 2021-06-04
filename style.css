@@ -16,27 +16,52 @@ body {
     align-items: center;
     justify-content: center;
 }
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 .brand {
     font-size: 1.6rem;
-    text-align: center;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    letter-spacing: 1cm;
+    letter-spacing: 0.85cm;
     cursor: pointer;
     text-shadow: 3.5px 3.5px 3.5px rgba(255, 255, 255, 0.25);
     margin-top: 1em;
-    margin-left: 2.5rem;
+    margin-left: 1.5em;
+    animation: brandanime 3s infinite;
 }
+/* @keyframes brandanime {
+    0% {
+        color: white;
+    }
+    50% {
+        background-image: linear-gradient(45deg, #fff, rgb(110, 110, 110));
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-transition: background-image 1000ms linear;
+        -webkit-text-fill-color: transparent;
+        transition-timing-function: ease-in;
+    }
+    100% {
+        background-image: linear-gradient(45deg,rgb(110, 110, 110), white);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+} */
 nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
-    justify-content: center;
     margin-bottom: 0;
 }
 nav li {
     margin: 0 1em;
+    
 }
 nav a {
     text-decoration: none;
@@ -65,11 +90,13 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto ;
-    margin-top: 9em;
+    margin: auto;
+    margin-top: 12em;
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255 , 0.040);
     margin-bottom: 0;
+    position: relative;
+    width: fit-content;
 }
 .design {
     font-size: 6rem;
@@ -77,32 +104,59 @@ nav a {
     margin: 0;
     animation: desanime 1s;
     animation-delay: 3.8s;
-    
 }
-.thoughts {
+.thou {
     margin: 0;
-    font-size: 3.25rem;
+    font-size: 1.75rem;
     margin-bottom: 0;
-    
     animation: thoanime 2s;
     animation-delay: 3.8s;
-    
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    bottom: 100px;
+    right: 120px;
+}
+.hts {
+    margin: 0;
+    font-size: 1.75rem;
+    margin-bottom: 0;
+    animation: thoanime 2s;
+    animation-delay: 3.8s;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    top: 130px;
+    right: 120px;
 }
 .idea {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 0;
-    
     animation: ideasanime 3s;
     animation-delay: 3.8s;
-   
+    position: absolute;
+    top: 207px;
+    left: 140px;
+    letter-spacing: 0.1cm;
 }
-@media screen and (max-width:391px) {
+/* @media screen and (min-width:360px) {
     .design {
         font-size: 5rem;
         margin: 0 auto;
     }
-}
+    .thou {
+        bottom: 80px;
+        left: 210px;
+    }
+    .hts {
+        top: 110px;
+        left: 210px;
+    }
+    .idea {
+        bottom
+    }
+} */
 @keyframes desanime {
     0%{
         opacity: 0;
@@ -128,7 +182,6 @@ nav a {
     }
 }
 .popup .overlay{
-    
     position: fixed;
     top: 0px;
     left: 0px;
@@ -139,7 +192,6 @@ nav a {
     display: none;
 }
 .popup .content{
-    
     position: fixed;
     top:50%;
     left: 50%;
@@ -171,8 +223,7 @@ nav a {
     height: 25px;
     border-radius: 50px;
 }
-.popup.active .overlay{
-    
+.popup.active .overlay{  
     display: block;
 }
 .popup.active .content{
@@ -269,6 +320,9 @@ nav a {
       opacity: 1;
     }
 }
+.page2 {
+    margin-top: 9em;
+}
 .typing1 {
     animation: type1;
 }
@@ -321,13 +375,14 @@ footer {
     margin: 0;
     background-color: black;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    min-height: 11vh;
+    border-radius: 10px 10px 0 0;
+    min-height: 12vh;
 }
 footer ul {
     display: flex;
     padding: 1.75em;
     justify-content: space-around;
+    margin: 0.3em;
 }
 #fb{
     font-size: 32px;
@@ -343,15 +398,17 @@ footer ul {
 }
 .imgs {
     margin: auto;
-    display: block;
+    display: block; /* centres the img */
     width: 90%;
     max-width: 960px; 
     border: 2px solid rgb(189, 125, 189);
     border-radius: 6px 6px 6px 0;      
 }
 .cat {
-    margin: 15em auto;
-    
+    margin:5em auto;
+}
+.cat1 {
+    margin-top: 25em;
 }
 .cat h1{
     position: relative;
@@ -362,10 +419,9 @@ footer ul {
     font-size: 1.4rem;
     font-weight: lighter;
 }
+/* .cat1 {
 
-.cat1 {
-    
-} 
+}  */
 .backtotop {
     position: fixed;
     right: 20px;
@@ -379,7 +435,7 @@ footer ul {
 #neilsen {
     font-weight: bolder;
 }
-.langs {
+/* .langs {
     display: flex;
     flex-direction: row;
     margin-top: 15em;
@@ -445,7 +501,7 @@ footer ul {
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 /* .cols {
     width: 100%;
     display: flex;
@@ -466,3 +522,144 @@ footer ul {
     background: white;
     font-family: 'Poppins',sans-serif;
 } */
+@media (min-width: 765px) {
+    .brand {
+        font-size: 2.10rem;
+    }
+    .design {
+        font-size: 12rem;
+    }
+    .thou {
+        bottom: 190px;
+        right: 250px;
+    }
+    .hts {
+        right: 250px;
+        top: 275px;
+    }
+    .idea {
+        top: 362px;
+        left: 362px;
+    }
+    header {
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{ 
+        margin-top: 6em;
+    }
+    nav li {
+        font-size: 1.2rem;
+        
+    }
+    /* .cat {
+        display: flex;
+        flex-direction: row;
+    }
+    .imgs {
+        width: 80%;
+        max-width: 960px;
+    } */
+    .page3 .cat1 .prods,
+    .page4 .cat2 .business,
+    .page5 .cat3 .portfolio{
+        font-size: 1.75rem;
+    }
+}
+@media (min-width: 675px) and (max-width:764px) {
+    header {
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .brand {
+        margin-top: 1.5em;
+        font-size: 2rem;
+    }
+    nav ul{ 
+        margin-top: 6em;
+    }
+    nav li {
+        font-size: 1.15rem;
+    }
+    .page2 {
+        margin-top: 9em;
+    }
+    .typing1, .typing2, .typ3, .typ4 {
+        font-size: 1.75rem;
+    }
+    .cat1 {
+        margin-top: 25em;
+    }
+    .cat {
+        margin-bottom: 10rem;
+    }
+    .page3 .cat1 .prods,
+    .page4 .cat2 .business,
+    .page5 .cat3 .portfolio{
+        font-size: 1.75rem;
+    }
+    .holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 12em;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255 , 0.040);
+        margin-bottom: 0;
+        position: relative;
+        width: fit-content;
+        
+    }
+    .design {
+        font-size: 10rem;
+        margin-bottom: 0;
+        margin: 0;
+        animation: desanime 1s;
+        animation-delay: 3.8s;
+    }
+    .thou {
+        margin: 0;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        animation: thoanime 2s;
+        animation-delay: 3.8s;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        bottom: 160px;
+        right: 210px;
+    }
+    .hts {
+        margin: 0;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        animation: thoanime 2s;
+        animation-delay: 3.8s;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        top: 225px;
+        right: 210px;
+    }
+    .idea {
+        margin: 0;
+        font-size: 2.25rem;
+        margin-bottom: 0;
+        animation: ideasanime 3s;
+        animation-delay: 3.8s;
+        position: absolute;
+        top: 340px;
+        left: 263px;
+        letter-spacing: 0.1cm;
+    }
+    @media (max-width: 572px) {
+        .design {
+            font-size: 9rem;
+        }
+    }
+
+}
