@@ -343,7 +343,7 @@ nav a {
     animation-duration: 15s;
     animation-timing-function: steps(25, end);
     animation-iteration-count: infinite;
-    animation-delay: 4.15s;
+    animation-delay: 4s;
 }
 .typing1::after,.typing2::after,.typ3::after,.typ4::after {
     content: "|";
