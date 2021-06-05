@@ -733,10 +733,4 @@ footer ul {
         left: 263px;
         letter-spacing: 0.1cm;
     }
-    @media (max-width: 572px) {
-        .design {
-            font-size: 9rem;
-        }
-    }
-
 }
