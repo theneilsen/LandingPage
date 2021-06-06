@@ -1,3 +1,4 @@
+
 * {
     scroll-behavior: smooth;
 } 
@@ -103,13 +104,13 @@ nav a {
     margin-bottom: 0;
     margin: 0;
     animation: desanime 1s;
-    animation-delay: 3.8s;
+    /* animation-delay: 1s; */
 }
 .thou {
     margin: 0;
     font-size: 1.75rem;
     margin-bottom: 0;
-    animation: thoanime 2s;
+    animation: word2 10s;
     animation-delay: 3.8s;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -121,7 +122,7 @@ nav a {
     margin: 0;
     font-size: 1.75rem;
     margin-bottom: 0;
-    animation: thoanime 2s;
+    animation: word2 10s;
     animation-delay: 3.8s;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -133,13 +134,54 @@ nav a {
     margin: 0;
     font-size: 1.75rem;
     margin-bottom: 0;
-    animation: ideasanime 3s;
+    animation: word3 20s;
     animation-delay: 3.8s;
     position: absolute;
     top: 207px;
     left: 140px;
     letter-spacing: 0.1cm;
 }
+@keyframes word1 {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    10% {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+@keyframes word2 {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    20% {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+@keyframes word3 {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    40% {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+@keyframes words {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    10% {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
 /* @media screen and (min-width:360px) {
     .design {
         font-size: 5rem;
@@ -157,7 +199,7 @@ nav a {
         bottom
     }
 } */
-@keyframes desanime {
+/* @keyframes desanime {
     0%{
         opacity: 0;
     } 
@@ -168,9 +210,11 @@ nav a {
 @keyframes thoanime {
     0%{
         opacity: 0;
+        visibility: visible;
     } 
     100% {   
         opacity: 100%;
+        visibility: visible;
     }
 }
 @keyframes ideasanime {
@@ -181,6 +225,16 @@ nav a {
         opacity: 100%;
     }
 }
+@keyframes tload {
+    0% {
+        opacity: 100%;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+} */
 .popup .overlay{
     position: fixed;
     top: 0px;
@@ -601,7 +655,11 @@ footer ul {
 } */
 @media (min-width: 765px) {
     .brand {
-        font-size: 2.10rem;
+        font-size: 2rem;
+        letter-spacing: 0.90cm;
+        position: relative;
+        right: 50px;
+
     }
     .design {
         font-size: 12rem;
@@ -733,4 +791,5 @@ footer ul {
         left: 263px;
         letter-spacing: 0.1cm;
     }
+
 }
